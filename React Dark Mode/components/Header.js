@@ -22,7 +22,7 @@ export default function Header(props){
             onClick={changeMode}
             style={h3style()}/>
             <h3>ReactFacts</h3>
-            <h4 className={props.darkMode ? "nav-h4-dark" : "nav-h4-light"}>Soner Güçlü</h4>
+            <h4 className={props.darkMode ? "nav-h4-dark" : "nav-h4-light"}>Click the React Icon on the Left</h4>
         </nav>
     )
 }
