@@ -1,0 +1,80 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: MV Boli;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.container {
+    /* background-color: aqua; */
+    min-height: 100vh;
+    padding: 3em 0.2em;
+    text-align: center;
+    background-image: url("https://picsum.photos/720/1480");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ input {
+    max-width: 100%;
+    min-width: 32ch;
+    border: solid 2px black;
+    border-radius: 0.4em;
+    margin: 1em;
+    padding: 0.4em 1em;
+    font-size: 1rem;
+ }
+ 
+.btn {
+    padding: 0.4em 2em;
+    font-size: 1rem;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 0.4em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+.btn:active {
+    background-color: white;
+    color: red;
+    border: solid 2px red;
+}
+
+#qr-code-container {
+    max-width: 256px;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 2em;
+        background-image: url("https://picsum.photos/1366/768");
+    }
+}
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+  }
+  
