@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dark {
+  color: white;
+  background-color: black;
+}
+
+.app {
+  min-height: 100vh;
+  background-image: url("https://picsum.photos/720/1480");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 2em 0.4em;
+}
+
+.app h1 {
+  font-size: 5rem;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: rgba(9, 9, 9, 0.5);
+  border: solid black 2px;
+  border-radius: 0.4em;
+  /* padding: 0.2em 0em; */
+}
+.app h2 {
+  font-family: MV Boli, "Lucida Grande", "Lucida Sans Unicode",
+    "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+
+summary {
+  cursor: pointer;
+  font-family: MV Boli, "Lucida Grande", "Lucida Sans Unicode",
+    "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 15rem;
+  margin: 0 auto;
+}
+summary:active {
+  color: blue;
+}
+input {
+  font-size: 1rem;
+  background-color: rgba(9, 9, 9, 0.3);
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0.7em 0em;
+  padding: 0.7em 1em;
+  border-radius: 1em;
+  border-bottom: solid 3px white;
+  color: white;
+  width: 15rem;
+}
+input:focus {
+  background-color: rgba(9, 9, 9, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    background-image: url("https://picsum.photos/1366/768");
+  }
+}
