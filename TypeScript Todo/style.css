@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  background-image: url("https://picsum.photos/720/1480");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+.header-container .input {
+  font: inherit;
+  flex-grow: 1;
+  background-color: rgba(9, 9, 9, 0.3);
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 0.7em;
+  border-bottom: solid 2px white;
+  padding: 0.4em 0;
+  color: white;
+}
+.header-container .input:focus {
+  background-color: rgba(9, 9, 9, 0.5);
+}
+.header-container button {
+  font: inherit;
+  color: red;
+  border-radius: 0.7em;
+  padding: 0.4em 0;
+  cursor: pointer;
+  margin-bottom: 0.4em;
+}
+.header-container button:hover,
+.header-container button:active,
+.header-container button:focus {
+  background-color: black;
+}
+
+.container {
+  max-height: 90%;
+  overflow-y: auto;
+  background-color: rgba(2, 2, 2, 0.5);
+  color: white;
+  border-radius: 0.7em;
+  padding: 0.7em;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("https://picsum.photos/1366/768");
+  }
+
+  .header-container {
+    flex-direction: row;
+  }
+
+  .header-container button {
+    margin-bottom: 0;
+    margin-right: 0.4em;
+    padding: 0.4em 0.7em;
+  }
+
+  .container {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+small {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.4em 0;
+  border-bottom: 1px solid white;
+}
+ul li:hover,
+ul li:active,
+ul li:focus {
+  background-color: rgba(9, 9, 9, 0.5);
+}
+
+li span {
+  flex-grow: 1;
+  font-weight: bold;
+  margin-left: 0.4em;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+li button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4em;
+  outline: none;
+  color: red;
+  cursor: pointer;
+}
+li button:hover,
+li button:active,
+li button:focus {
+  background-color: white;
+}
