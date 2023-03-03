@@ -76,7 +76,12 @@ function App() {
 
   return (
     <div className="App">
+    
       <h1>QUIZ APP</h1>
+
+      {gameOver ? <h1>Soner Güçlü</h1> : null}
+
+      {gameOver ? <p>Don't pat the question to cheat!</p> : null}
 
       {loading && <p>Loading Questions...</p>}
       {!loading && !gameOver && (
@@ -103,8 +108,6 @@ function App() {
           Next Question
         </button>
       ) : null}
-
-      {gameOver ? <h1>Soner Güçlü</h1> : null}
 
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
         <div className="difficulty-buttons">
